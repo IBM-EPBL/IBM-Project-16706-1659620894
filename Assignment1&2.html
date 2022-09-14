@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="UTF-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+      <style>
+         body, html {
+         height: 100%;
+         }
+         .hero-image {
+         background-image:
+          linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("https://i.postimg.cc/qvNwdHpx/ezgif-4-0fa6b3648a.jpg");
+         height: 50%;
+         background-position: center;
+         background-repeat: no-repeat;
+         background-size: cover;
+         position: relative;
+         }
+         .hero-text {
+         text-align: center;
+         position: absolute;
+         top: 50%;
+         font-family: 'Montserrat', sans-serif;
+         left: 50%;
+         transform: translate(-50%, -50%);
+         color: white;
+         }
+         @media only screen and (min-width : 240px) {
+         h1 {
+         font: 500 200%/100% Ubuntu;
+         margin: 0 0 30px 10px;
+         }
+         label {
+         display: block;
+         margin: 0 0 10px 10px;
+         }
+         #contact label {
+         width: 23%;
+         font-size: 150%;
+         text-align: left;
+         }
+         #contact input[type=text],
+         #contact input[type=email],
+         #contact textarea {
+         width: 94.3%;
+         font-size: 100%;
+         margin-left: 10px;		
+         }
+         #contact .button {
+         margin-left: 10px;
+         font-size: 130%;
+         }
+         }
+         @media only screen and (min-width : 480px) {
+         h1 {
+         font: 500 160%/100% Ubuntu;
+         margin: 0 0 20px 10px;
+         }
+         label,
+         input{display: inline-block}
+         #contact label {
+         font-size: 100%;
+         width: 20%;
+         text-align: right;
+         }
+         #contact label[for=message] {vertical-align: top}
+         #contact input[type=text],
+         #contact input[type=email],
+         #contact textarea {			
+         width: 66.6667%;
+         }
+         #contact .button {
+         margin-left: 24%;
+         font-size: 90%;
+         }
+         }
+         body {
+      
+         font-family: 'Montserrat', sans-serif;
+         font-weight: 400;
+         color: #666
+         }
+         .container {
+         max-width: 600px;
+         margin: 3.33334% auto;
+         }
+         .line {
+         clear: both;
+         padding: 15px 0;
+         border-top: 1px solid #EBEBEB;
+         }
+         #contact input[type=text],
+         #contact input[type=email],
+         #contact textarea {
+         color: #666;		
+         box-sizing: border-box;
+         border: 1px solid #CCC;
+         border-radius: 3px;
+         padding: 5px 8px;
+         }
+         #contact input[type=text],
+         #contact input[type=email]{height: 40px}
+         #contact textarea {
+         height: 200px;
+         min-height: 200px;
+         font-family: 'Montserrat', sans-serif;
+         overflow: auto;
+         }
+         #contact input[type=text]:focus,
+         #contact input[type=email]:focus,
+         #contact textarea:focus {
+         outline: none;
+         box-shadow: inset 1px 2px 3px #CCC;
+         }
+         #contact .button {
+         padding: 10px 15px;
+         border-radius: 3px;
+         color: #CFE6FC;
+         font-family: 'Montserrat', sans-serif;
+         font-weight: 300;
+         background-color: rgb(58, 183, 228);
+         background-image: linear-gradient(#215F9C, #1A4F82);
+         -o-background-image: linear-gradient(#215F9C, #1A4F82);
+         cursor: pointer;
+         }
+      </style>
+   </head>
+   <body>
+      <div class="hero-image">
+         <div class="hero-text">
+            <h1 style="font-size: 30px;font-style: italic;">I'm Praveen Kumar S P</h1>
+            <p style="font-size: 19px;">I am a hard-working and Positive Thinker. I'm passionate about my work and I know how to get the job done. I would describe myself as an open and honest person who tries to be fair in everything I do.</p>
+         </div>
+      </div>
+      <div class="container">
+         <h1> Contact Me </h1>
+         <form id="contact" method="post" action="">
+          
+            <div class="line">
+               <label for="name">Name: </label>
+               <input type="text" name="name" id="name">
+            </div>
+       
+            <div class="line">
+               <label for="email">E-Mail: </label>
+               <input type="email" name="email" id="email">
+            </div>
+            <div class="line">
+               <label for="name">Ph. No:</label>
+               <input type="text" name="name" id="name">
+            </div>
+            <div class="line">
+               <label for="message">Message: </label>
+               <textarea name="message" id="message" rows="3" cols="10"></textarea>
+            </div>
+            <div class="line">
+               <input type="submit" name="submit" value="Submit" class="button">
+            </div>
+         </form>
+      </div>
+   </body>
+</html>
