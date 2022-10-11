@@ -1,0 +1,44 @@
+{% extends "indexbase.html" %}
+{% block title %}About Page{% endblock %}
+{% block content %}
+
+<div class="p-1">
+    <div class="row bg-white p-sm-2 p-md-5 contact">
+        <div class="col-md-6"> 
+            <img  style="width: 600px;
+            height:400px;" src="https://i.ibb.co/Hdr4P0S/Whats-App-Image-2022-10-11-at-9-46-13-PM.jpg" class="profile-image w-100 h-100 p-2"></img>
+        </div> 
+        <div class="col-md-6 p-2">
+            <form
+            style="border-radius: 15px; background-color: #e3e5f7; " class="p-4"
+            >
+            
+            <h3 class="text-uppercase text-center mb-5">Contact</h3>
+            
+              <!-- Email input -->
+              
+              <div class="form-outline md-4">
+                <label class="form-label" for="form2Example1">Email address</label>
+                <input type="email" id="form2Example1" class="form-control" />
+               
+              </div>
+            
+              <div class="form-outline mb-4 mt-3">
+                <label class="form-label" for="form2Example2">Name</label>
+                <input type="text" id="form2Example2" class="form-control" />
+              </div>
+              
+              <div class="form-outline mb-4 mt-3">
+                <label class="form-label" for="form2Example2">Message</label>
+                <input type="text" id="form2Example2" class="form-control" />
+              </div>
+            
+            
+              <!-- Submit button -->
+              <button type="button" class="btn btn-success btn-block mb-4">Send</button>              
+            </form>
+        </div>
+    </div>
+    
+</div>
+<!-- {% endblock %} -->
