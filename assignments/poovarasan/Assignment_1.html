@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+    <head>
+        <title>Home_page</title>
+        <style>
+            
+            .letters{
+                color: azure;
+                position: absolute;
+                top: 10%;
+                left: 20%;
+            }
+            
+            
+            input[type=text], select, textarea {
+            width: 100%; 
+            padding: 12px; 
+            border: 1px solid #ccc; 
+            border-radius: 4px; 
+            box-sizing: border-box; 
+            margin-top: 6px; 
+            margin-bottom: 16px; 
+            resize: vertical 
+            }
+            input[type=submit] {
+            background-color: #fc2229;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+            }
+
+            input[type=submit]:hover {
+            background-color: #fe0f0f;
+            }
+
+            .div2 {
+            border-radius: 5px;
+            background-color: #1d62d9;
+            padding: 20px;
+            margin:30px;
+            }
+
+            
+        </style>
+    </head>
+    <body>
+        <div class="img1">
+            <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQeVhLt0ggRJD69E7FRyo3LLjdApPm0GZuw_40r66v1EnocxDlHhVAT4WrKMtIq2R308A&usqp=CAU" width="100%" height="20%"
+             style="margin-top: 12px;
+            margin-bottom: 8px;
+            margin-right: 8px;
+            margin-left: 18px;">
+            <div class="letters">
+            <h3 class="intro">Hi , I am </h3>
+            <h1 class="name"><b>POOVARASAN K </b>,</h1>
+            <h3 class="desc">* I am curently pursuing my Bachelor's degree in Computer Science and Engineering<br> at Sri Krishna Collge of Enginnering and Technology.</h3>
+            <h3 class ="desc1"> * I consider myself hardworking, Easily Adaptable, Flexible Personality,<br> Quick Learning as my Strength. </h3>
+            <h3 class="desc2">* My skills are Java, C, Dbms, Html, CSS</h3>
+            </div>
+        </div>
+        <div class =div2>
+            <form  action="mailto:flowerkingpoovarasan3@gmail.com" method="post" enctype="text/plain">
+      
+                <label for="fname">First Name</label>
+                <input type="text" id="fname" name="firstname" placeholder="Your name..">
+            
+                <label for="lname">Last Name</label>
+                <input type="text" id="lname" name="lastname" placeholder="Your last name..">
+            
+                <label for="country">Profession</label>
+                <select id="country" name="country">
+                  <option value="australia">Student</option>
+                  <option value="canada">Mentor</option>
+                  <option value="usa">Other</option>
+                </select>
+            
+                <label for="subject">Subject</label>
+                <textarea id="subject" name="subject" placeholder="Write something.." style="height:200px"></textarea>
+            
+                <input type="submit" value="Submit">
+            
+              </form>
+        </div>
+    </body>
+</html>
