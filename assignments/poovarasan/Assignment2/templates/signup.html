@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<head>
+    <title>Home page</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href=/static/style1.css>
+</head>
+<body>
+    <nav class="navbar navbar-inverse">
+        <div class="container-fluid">
+          <ul class="nav navbar-nav">
+            <li><a href="/">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li class="dropdown"><a class="dropdown-toggle" data-toggle="dropdown" href="#">SignIn <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="signin.html">Login</a></li>
+                <li   class="active"><a href="signup.html">SignUp</a></li> 
+              </ul>
+            </li>
+            
+          </ul>
+        </div>
+      </nav>
+      <div class="signin">
+        <form>
+            <div class="email"><label>Email address:</label>
+            <input type="email"  id="exampleInputEmail1"></div>
+            <div class="pass"><label>Username:    </label>
+            <input type="password"></div>
+            <div class="pass"><label>Password :    </label>
+            <input type="password"></div>
+            <div class="pass"><label> Retype Password :    </label>
+            <input type="password"></div>
+            <a href="complete.html" class="button ">Submit</a> 
+            <a href="signin.html" class="button ">Login</a>
+        </form>
+        </div>
+</body>
