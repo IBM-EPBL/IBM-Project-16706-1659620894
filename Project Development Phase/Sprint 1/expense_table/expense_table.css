@@ -1,0 +1,70 @@
+.table-filter {
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.filter-dropdown {
+    width: 40%;
+    height: 50px;
+    margin-right: 13px;
+    text-align: center;
+    border-radius: 15px;
+}
+
+.filter-dropdown-item {
+    border-radius: 15px;
+
+}
+
+.expense-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 30px;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+}
+
+.column-names,
+.table-entry {
+    padding: 15px;
+    background-color: rgba(255, 255, 255, 0.2);
+    color: #000;
+}
+
+.column-names {
+    text-align: left;
+}
+
+tbody tr:hover {
+    /* background-color: rgba(255,255,255,0.3); */
+    background-color: #66c4ac;
+}
+
+tbody .table-entry {
+    position: relative;
+}
+
+tbody .table-entry:hover:before {
+    content: "";
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: -9999px;
+    bottom: -9999px;
+    /* background-color: rgba(255,255,255,0.2); */
+    z-index: -1;
+}
+
+.table-entry-actions {
+    display: flex;
+    /* background-color: red; */
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    gap: 20px;
+}
+
+#table-entry-icon {
+    font-size: 1.5rem;
+    cursor: pointer;
+}
