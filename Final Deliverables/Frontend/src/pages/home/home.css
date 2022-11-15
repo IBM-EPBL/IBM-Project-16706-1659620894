@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700&display=swap');
+
+* {
+    box-sizing: border-box;
+}
+
+.main-container {
+    width: 100%;
+    height: 100%;
+    /* display: grid;
+	 grid-template-columns: 5% auto; */
+}
+
+.main-area {
+    height: 100%;
+    width: 100%;
+    padding-top: 20px;
+
+    overflow: hidden;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    place-content: start;
+}
+
+.hello-text {
+    padding-left: 12px;
+}
+
+
+.card-purple-blue {
+    background: linear-gradient(45deg, #6d80fe 0%, #23d2fd 100%);
+}
+
+.card-salmon-pink {
+    background: linear-gradient(45deg, #ff998b 0%, #ff6d88 100%);
+}
+
+.card-blue-green {
+    background: linear-gradient(45deg, #09afe8 0%, #29f499 100%);
+}
+
+.card-purple-pink {
+    background: linear-gradient(45deg, #707cff 0%, #fa81e8 100%);
+}
+
+.card {
+    border: 0;
+    color: black;
+    border-radius: 15px;
+}
+
+.card-body {
+    padding: 15px 20px;
+}
+
+.float {
+    position: fixed;
+    width: 70px;
+    height: 70px;
+    bottom: 40px;
+    right: 40px;
+    border: none;
+    color: white;
+    border-radius: 50px;
+    text-align: center;
+    font-size: 30px;
+    display: grid;
+    place-items: center;
+    background: linear-gradient(45deg, #09afe8 0%, #29f499 100%);
+    z-index: 100;
+}
